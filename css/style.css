@@ -1,0 +1,25 @@
+/*fuentes importadas / imported fonts (Poppins & Open Sans)*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/*propiedades personalizadas / custom properties*/
+:root{
+    --primary-violet:hsl(257, 40%, 49%);
+    --primary-s-magenta:hsl(300, 69%, 71%);
+
+    --open-sans:'Open Sans';
+    --poppins:'Poppins';
+
+}
+
+/*box sizing fix*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*conversor rem / rem conversor (1rem = 10px)*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/*propiedades Frontend Mentor / Frontend Mentor properties*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
