@@ -52,6 +52,11 @@ p{
   margin-bottom: 3rem;
 }
 @media (min-width: 758px) {
+    .parrafo{
+      font-size: 1.8rem;
+    }
+}
+@media (min-width: 758px) {
     h1,p{
       text-align: start;
     }
@@ -79,7 +84,7 @@ p{
 @media (min-width: 758px) {
     .contenedor{
       flex-direction: row;
-      width: 150rem;
+      width: 165rem;
       text-align: left;
     }
 }
