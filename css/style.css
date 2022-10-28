@@ -19,6 +19,83 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+body{
+    font-size: 1.3rem;
+    background-color: var(--primary-violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 500px) {
+    body{
+      background-image: url(../images/bg-desktop.svg);
+    }
+}
+header{
+  
+}
+h1{
+  font-family: var(--poppins);
+  color: white;
+}
+p{
+  font-family: var(--open-sans);
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+/*contenedor / container*/
+.logo{
+  width: 12rem;
+  margin: 2rem 19rem 4rem 0;
+  /* margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-right: 19rem; */
+}
+.contenedor{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.contenedor-iconos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+
+.contenido-principal{
+  margin-top: 4rem;
+}
+.mockup{
+  width: 100%;
+}
+.boton{
+  color: var(--primary-violet);
+width: 70%;
+padding: 1.5rem;
+border: none;
+border-radius: 4rem ;
+font-family: var(--poppins);
+transition: 300ms;
+
+}
+.boton:hover{
+  background-color: var(--primary-s-magenta);
+  color: white;
+}
+.sombra{
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
 
 /*propiedades Frontend Mentor / Frontend Mentor properties*/
 .attribution { font-size: 11px; text-align: center; }
