@@ -28,13 +28,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 @media (min-width: 500px) {
     body{
+      font-size: 2.5rem;
       background-image: url(../images/bg-desktop.svg);
     }
 }
 header{
+  width: 100%;
+  margin-bottom: 5rem;
   
 }
 h1{
@@ -47,13 +51,23 @@ p{
   font-size: 1.6rem;
   margin-bottom: 3rem;
 }
+@media (min-width: 758px) {
+    h1,p{
+      text-align: start;
+    }
+}
 /*contenedor / container*/
 .logo{
+  margin: 2rem 0 4rem 4rem;
   width: 12rem;
-  margin: 2rem 19rem 4rem 0;
-  /* margin-top: 2rem;
-  margin-bottom: 4rem;
-  margin-right: 19rem; */
+  
+}
+@media (min-width: 758px) {
+    .logo{
+      width: 20rem;
+      margin-left:12rem;
+      
+    }
 }
 .contenedor{
   width: 30rem;
@@ -62,6 +76,13 @@ p{
   text-align: center;
 
 }
+@media (min-width: 758px) {
+    .contenedor{
+      flex-direction: row;
+      width: 150rem;
+      text-align: left;
+    }
+}
 
 .contenedor-iconos{
   display: flex;
@@ -69,10 +90,25 @@ p{
   justify-content: center;
   gap: 2rem;
   margin-top: 8rem;
+  
+}
+@media (min-width: 758px) {
+    .contenedor-iconos{
+      width: 100%;
+      justify-content: end;
+      margin-right: 40rem;
+      margin-top: 2rem;
+    }
 }
 
 .contenido-principal{
   margin-top: 4rem;
+}
+@media (min-width: 758px) {
+    .contenido-principal{
+      padding: 0 6rem 0 6rem;
+      margin-top: 0;
+    }
 }
 .mockup{
   width: 100%;
@@ -87,6 +123,20 @@ font-family: var(--poppins);
 transition: 300ms;
 
 }
+@media (min-width: 758px) {
+    .boton{
+      font-size: 1.8rem;
+      width: 30%;
+    }
+}
+@media (min-width: 758px) {
+    footer{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+}
 .boton:hover{
   background-color: var(--primary-s-magenta);
   color: white;
@@ -98,5 +148,5 @@ transition: 300ms;
 }
 
 /*propiedades Frontend Mentor / Frontend Mentor properties*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; margin: 0 auto; }
+.attribution a { color: hsl(187, 100%, 50%); }
