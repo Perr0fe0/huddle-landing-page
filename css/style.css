@@ -51,14 +51,20 @@ p{
   font-size: 1.6rem;
   margin-bottom: 3rem;
 }
+main{
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 758px) {
     .parrafo{
-      font-size: 1.8rem;
+      font-size: 1.3rem;
     }
 }
 @media (min-width: 758px) {
     h1,p{
       text-align: start;
+      font-size: 3.7rem;
+      
     }
 }
 /*contenedor / container*/
@@ -70,7 +76,7 @@ p{
 @media (min-width: 758px) {
     .logo{
       width: 20rem;
-      margin-left:12rem;
+      
       
     }
 }
@@ -84,7 +90,7 @@ p{
 @media (min-width: 758px) {
     .contenedor{
       flex-direction: row;
-      width: 165rem;
+      width: 90%;
       text-align: left;
     }
 }
@@ -111,8 +117,7 @@ p{
 }
 @media (min-width: 758px) {
     .contenido-principal{
-      padding: 0 6rem 0 6rem;
-      margin-top: 0;
+      margin: 1rem 15rem 0 3rem;
     }
 }
 .mockup{
